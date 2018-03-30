@@ -67,6 +67,7 @@ nav ul li a:hover
 {
   color: #fff;
   background: #f00;
+  text-decoration: none;
 }
 
 section.sek1 {
@@ -128,12 +129,119 @@ section.sekcja1, section.sekcja2, section.sekcj13 {
 }
 
 .card {
-  padding-left: 60px;
-  overflow: hidden;
+  /*padding-left: 60px;*/
+  z-radius: 100;
+  overflow: visible;
 }
 
+/*.card-body {
+  border-radius: 100px;
+}*/
 
+.card:hover {
+  transform: scale(1.2,1.2);
+  /*overflow-x: visible;*/
+}
 
+.card-body {
+  align-content: center;
+}
 
+.card-body ul {
+  position: absolute;
+  margin: -100;
+  padding-bottom: 200;
+}
 
+.card-body ul li {
+  list-style: none;
+  text-decoration: none;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.img-container{
+  width: 100%;
+  height: 50%;
+  position: relative;
+  background-size: cover;
+}
+
+.img-container img.banner-img {
+  width: 100%;
+  height: 60%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.img-container img.card-img-right {
+  position: absolute;
+  width: 120px;
+  height: 160px;
+  border-radius: 50%;
+  top: 70px;
+  right: 110px;
+  border: 2px solid #fff;
+}
+
+.share {
+  position: absolute;
+  top: 40px;
+  left: 280px;
+}
+
+.share ul {
+  list-style: none;
+}
+
+.share ul li {
+  width: 35px;
+  height: 35px;
+  margin-bottom: 5px;
+  border-radius: 50px;
+  border: 2px solid #673887;
+  text-align: center;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+.share ul li .fa {
+  line-height: 35px;
+  color: #673887;
+  transition: all 1s ease;
+}
+
+.share ul li:hover {
+  background: #673887;
+  color: azure;
+}
+
+.share ul li:hover .fa {
+  color: #fff;  
+}
+
+.ptext{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  color: azure;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  overflow: visible;
+}
+
+/* .ptext .border {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+} */
+
+/*.ptext .border .trans{
+  background-color: transparent;
+}*/
 
